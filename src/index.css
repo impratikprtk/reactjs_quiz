@@ -1,0 +1,253 @@
+body {
+    margin: 0;
+    padding: 5% 2% 2%;
+    background-color: white;
+    background-image: url(./components/images/whitebgc.jpg) ; 
+    background-size:100%;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    height:100%;
+    width:100%;
+    font-family: Arial, Helvetica, sans-serif;
+color: black;
+}
+.whitetext{
+    color: black;
+}
+.acme{
+    font-family: Acme, cursive;
+}
+.Merriweather{
+   font-family: Merriweather;
+}
+.galada{
+    font-family: Galada;
+}
+.indieflower{
+    font-family:"Indie Flower", cursive;
+}
+
+#navbar {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: block;
+    transition: top 0.5s ease;
+    text-align: center;
+    overflow: hidden;
+}
+.flright{
+    float: right;
+    padding: 5px;
+    margin: 5px;
+}
+.Sacramento{
+   font-family: Sacramento;
+    font-size: xx-large;
+    color: #FF3300;
+    text-shadow: 0 -10px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
+    position: relative;
+    left: 2em;
+    overflow: visible;
+}
+
+
+/*login css starts*/
+.marginauto{
+  margin:0 auto;
+  width: 25%;
+}
+.centerdiv{
+    margin:auto;
+    width: 40%;
+    background-color: transparent;
+    border: solid;
+    border-collapse: separate;
+    border-width: 4px;
+    border-color: blueviolet;
+    border-radius: 10px;
+    padding: 5%;
+    display: block;
+}
+.centerdivwithoutborder{
+    margin: 0 auto;
+    width: 100%;
+    background-color: transparent;
+    padding: 5px;
+    display: block;
+    border-collapse: separate;
+}
+/*login css ends*/
+
+.inputbox{
+
+    border-color: blueviolet;
+    display: block;
+    width: auto;
+    margin: 0 auto 15px;
+    padding: 5px;
+
+}
+.textalign{
+    text-align: center;
+    margin: 0 auto;
+}
+.innnerbox{
+    width:300px;
+    max-width:300px;
+    display: inline-block;
+    margin: 0 auto;
+    height:100px;
+    border-radius: 7px;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+}
+.innnerbox:hover{
+    background-color: aqua;
+    color: maroon;
+}
+.innnerbox2{
+    width:300px;
+    max-width:300px;
+    display: inline-block;
+    margin: 0 auto;
+    height:100px;
+    border-radius: 7px;
+    cursor: pointer;
+    background-color: grey;
+    color: white;
+}
+.innnerbox2:hover{
+    background-color: aqua;
+   color: brown;
+}
+.wid300{
+    width: 300px;
+    margin: 0 auto;
+}
+.img-circle{
+    width: 100px;
+    height: 100px;
+}
+
+
+#question {
+    background-color: #0094da;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+#question h4{
+    background-color: #fff;
+    color: #0b0e21;
+    display:inline-block;
+    padding: 10px 25px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#question p{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#answers ul{
+    list-style-type: none;
+    padding: 0;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#answers li {
+    background-color: #fff;
+    border: 2px solid #0094da;
+    min-height: 70px;
+    width: 48%;
+    display: flex;
+    margin-bottom: 30px;
+    transition: color .3s ease, border-color .3s ease, transform .3s ease;
+    cursor: pointer;
+}
+
+#answers li span {
+    background-color: #0084da;
+    color: #fff;
+    font-size: 30px;
+    flex: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color .3s ease;
+}
+
+#answers li p {
+    color: #0b0e21;
+    font-size: 16px;
+    font-weight: 600;
+    flex: calc(100% - 75px);
+    margin: auto 20px;
+    transition: color .3s ease;
+}
+
+#answers li:after{
+    display: block;
+}
+
+#answers li:hover {
+    transform: scale(1.03);
+}
+
+#answers li.right {
+    border-color: #1ea55b;
+    color: #1ea55b;
+}
+
+#answers li.right span {
+    background-color: #1ea55b;
+}
+
+#answers li.right p {
+    color: #1ea55b;
+}
+
+#answers li.wrong {
+    border-color: #dc0a0a;
+    color: #dc0a0a;
+}
+
+#answers li.wrong span {
+    background-color: #dc0a0a;
+}
+
+#answers li.wrong p {
+    color: #dc0a0a;
+}
+
+#submit {
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+@media (max-width: 768px) {
+    #question p {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #answers li {
+        width: 100%;
+    }
+
+    #submit button {
+        width: 100%;
+    }
+}
